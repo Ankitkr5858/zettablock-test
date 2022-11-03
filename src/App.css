@@ -1,0 +1,127 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  cursor: pointer;
+}
+
+.tabs{
+  background:rgb(11, 214, 254);
+  padding: 1rem 2rem;
+}
+.tabs>ul{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap:4rem;
+  justify-content: center;
+  color: white;
+}
+.tabs>ul>li{
+  cursor: pointer;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+
+}
+.tables{
+  padding: 1rem 2rem;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr {
+  cursor: pointer;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.btn{
+  padding: 0.7rem 1rem;
+  border:none;
+  border-radius: 10px;
+}
+.actions{
+  display: flex;
+  gap: 1rem;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.btn-edit{
+  background: rgb(50, 228, 50);
+  color: white;
+}
+.btn-delete{
+  background: red;
+  color:white;
+}
+.Popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 50%;
+  z-index: 2;
+  padding: 2rem 4rem;
+}
+.Popup > div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+.Popup > div > input{
+  padding: 1rem;
+}
+.Popup > div > textarea{
+  padding: 1rem;
+}
+.overlay{
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+}
+.hidden{
+  display: none;
+}
+.SearchAndPagination{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Search{
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+.Search > input{
+  padding: 0.6rem;
+}
+.Pagination{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.btn-normal{
+  background: rgb(24, 122, 193);
+  color: white;
+}
